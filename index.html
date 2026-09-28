@@ -3,16 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EduAlert · Sistema digital para CECAR</title>
+<title>EduAlert · Alerta de atención temprana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="login" hidden></div>
+<div id="login">
+  <div class="login">
+    <span class="logo" style="margin:auto;background:#7c3aed">♥</span>
+    <h1>EduAlert</h1>
+    <p>Sistema de alerta de atención temprana. Elige tu rol para continuar.</p>
+    <small class="entry">Opciones de entrada</small>
+    <div class="roles">
+      <button type="button" class="role" style="--c:#16a34a" data-action="role" data-v="coordinador">
+        <span class="logo">♥</span>
+        <b>Coordinador</b>
+        <small>Deserción, predicción de riesgo y seguimiento académico</small>
+      </button>
+      <button type="button" class="role" style="--c:#7c3aed" data-action="role" data-v="bienestar">
+        <span class="logo">♥</span>
+        <b>Bienestar</b>
+        <small>Citas, seguimiento de estudiantes y factores de riesgo</small>
+      </button>
+    </div>
+  </div>
+</div>
 <div id="app" class="app" hidden>
   <aside class="side">
-    <div class="brand"><span class="logo">♥</span><div><b id="brandName"></b><small>CECAR</small></div></div>
+    <div class="brand"><span class="logo">♥</span><div><b id="brandName"></b><small>Alerta de atención temprana</small></div></div>
     <nav id="nav" aria-label="Módulos"></nav>
     <div class="user">
       <span class="av" id="uAv"></span>

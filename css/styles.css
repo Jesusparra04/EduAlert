@@ -72,7 +72,9 @@ svg{display:block;width:100%;height:auto}svg text{font:10px Inter;fill:var(--mut
 .toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,30px);background:#191c2b;color:#fff;padding:10px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 #login{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--bg)}
-.login{max-width:640px;text-align:center}.login h1{font-size:28px;margin:6px 0}.login>p{color:var(--mute);margin-bottom:26px}
+.login{max-width:560px;width:100%;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px 26px}
+.login h1{font-size:28px;margin:6px 0}.login>p{color:var(--mute);margin-bottom:26px}
+.login .entry{display:block;margin-bottom:12px}
 .roles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .role{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:26px 18px;text-align:left}
 .role:hover{border-color:var(--c)}.role .logo{background:var(--c);margin-bottom:12px}.role b{display:block;font-size:16px}
